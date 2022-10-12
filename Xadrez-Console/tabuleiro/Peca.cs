@@ -7,9 +7,9 @@
         public Tabuleiro Tab { get; set; }
         public int QtdeMovimentos { get; protected set; }
 
-        public Peca(Posicao posicao, Cor cor, Tabuleiro tab)
+        public Peca(Tabuleiro tab, Cor cor)
         {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
             Tab = tab;
             QtdeMovimentos = 0;
